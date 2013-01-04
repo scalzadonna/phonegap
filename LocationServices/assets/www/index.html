@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>PhoneGap</title>
+<script type="text/javascript" src="phonegap-1.2.0.js"></script>
+<script type="text/javascript">
+	/** Called when phonegap javascript is loaded */
+	function onDeviceReady() {
+		document.getElementById("helloworld").innerHTML = "::PhoneGap Framework Services::";
+	}
+	/** Called when browser load this page*/
+	function init() {
+		document.addEventListener("deviceready", onDeviceReady, false);
+	}
+</script>
+</head>
+<body onLoad="init()">
+	<h1 id="helloworld">...</h1>
+
+	<a href="./location.html">Location Service</a>
+	<br />
+	<a href="./compass.html">Compass Service</a>
+	<br />
+	<a href="./accel.html">Accelerometer Service</a>
+	<br />
+</body>
+</html>
